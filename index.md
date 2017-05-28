@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+首先打开开始菜单，找到 windows 系统 -- 右击命令提示符 -- 更多 -- 以管理员身份运行
 
-You can use the [editor on GitHub](https://github.com/kuangjianwu/Win10DisableTheKeyboard/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+输入以下命令，回车：
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+sc config i8042prt start= disabled
 
-### Markdown
+然后重启电脑，就好啦~
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+你想恢复的时候，只要重复上面的动作，输入的命令改为：
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kuangjianwu/Win10DisableTheKeyboard/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+sc config i8042prt start= auto
